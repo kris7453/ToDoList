@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/taskBack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/task_selector">
+
+    <TextView
+        android:id="@+id/priorityLabel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/lowPriority"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="1"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/checkbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/taskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="4sp"
+            android:text="Task to do"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/taskDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="4sp"
+            android:text="01-01-1990"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/attachmentsIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/attachments" />
+
+</LinearLayout>
